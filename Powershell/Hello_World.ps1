@@ -1,0 +1,1 @@
+"Hello World!" | Out-file -FilePath .\HelloWorld.txt
