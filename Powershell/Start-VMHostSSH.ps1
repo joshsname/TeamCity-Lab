@@ -38,6 +38,6 @@ Function Start-VMHostSSH {
     }
 }
 
-$session = Connect-vCenter -vCenterServer $VMHost -username $username -password $password
+$session = Connect-VMHost -vCenterServer $VMHost -username $username -password $password
 Start-VMHostSSH -VMHost $VMHost
 Disconnect-VIServer $session -confirm:$false
